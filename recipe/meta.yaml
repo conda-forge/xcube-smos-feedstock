@@ -1,5 +1,5 @@
 {% set name = "xcube-smos" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-smos/archive/v{{ version }}.tar.gz
-  sha256: 442187e9ee508f9780283f23d0fff0327688af91eab3f82cd3db6b4df9c14915
+  sha256: 3f3a42bfb93264ef43ec73dc0fd278180924d7f387b9af9eb1c35bc87eb9b54c
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - h5py >=3.8,<3.9
     - kerchunk >=0.2,<0.3
     - xcube
-    
+
 test:
   imports:
     - xcube_smos
