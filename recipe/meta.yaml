@@ -22,19 +22,10 @@ requirements:
     - python >=3.10
     - pip
   run:
-    - python >=3.10
     - click
-    - fsspec
-    - h5netcdf
-    - h5py
-    - importlib_resources
-    - numpy
-    - numba
-    - pandas
-    - xarray
-    - xcube >=1.2
-    # Optional
-    # - kerchunk
+    - h5netcdf >=1.1.0,<1.2
+    - h5py >=3.8,<3.9
+    - xcube
 
 test:
   imports:
