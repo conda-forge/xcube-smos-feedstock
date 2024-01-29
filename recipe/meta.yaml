@@ -14,31 +14,39 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
   entry_points:
+    # Requires kerchunk
     - nckcidx = xcube_smos.nckcindex.cli:cli
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - pip
   run:
-    - python >=3.8
+    - python >=3.10
     - click
-    - boto3
-    - h5netcdf >=1.1.0,<1.2
-    - h5py >=3.8,<3.9
-    - kerchunk >=0.2,<0.3
+    - fsspec
+    - h5netcdf
+    - h5py
+    - importlib_resources
+    - numpy
+    - numba
+    - pandas
+    - xarray
     - xcube
-    
+    # Optional
+    - kerchunk
+
 test:
   imports:
     - xcube_smos
+    - xcube_smos.store
 
 about:
   home: https://github.com/dcs4cop/xcube-smos
   summary: 'xcube data store for ESA EE SMOS Level-2 multi-level datasets'
   description: |
     xcube-smos is a data store plug-in for xcube, providing experimental
-    support for ESA EE SMOS Level-2 multi-level datasets.
+    support for ESA EE SMOS Level-2 data.
   license: MIT
   license_family: MIT
   license_file: LICENSE
