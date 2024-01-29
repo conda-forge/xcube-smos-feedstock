@@ -34,7 +34,7 @@ requirements:
     - xarray
     - xcube
     # Optional
-    - kerchunk
+    # - kerchunk
 
 test:
   imports:
