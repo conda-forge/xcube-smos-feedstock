@@ -32,10 +32,8 @@ requirements:
     - numba
     - pandas
     - xarray
-    - xcube
-    # Optional
-    # - kerchunk
-
+    - xcube >=1.2
+    
 test:
   imports:
     - xcube_smos
