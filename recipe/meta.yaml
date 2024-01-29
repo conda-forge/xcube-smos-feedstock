@@ -32,7 +32,7 @@ requirements:
     - numba
     - pandas
     - xarray
-    - xcube >= 1.2
+    - xcube >=1.2
     # Optional
     # - kerchunk
 
