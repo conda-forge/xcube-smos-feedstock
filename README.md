@@ -7,7 +7,7 @@ Home: https://github.com/dcs4cop/xcube-smos
 
 Package license: MIT
 
-Summary: xcube data store for ESA EE SMOS Level-2 multi-level datasets
+Summary: xcube data store for ESA EE SMOS Level-2 data
 
 xcube-smos is a data store plug-in for xcube, providing experimental
 support for ESA EE SMOS Level-2 data.
