@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     # Requires kerchunk
     - nckcidx = xcube_smos.nckcindex.cli:cli
@@ -41,7 +41,7 @@ test:
 
 about:
   home: https://github.com/dcs4cop/xcube-smos
-  summary: 'xcube data store for ESA EE SMOS Level-2 multi-level datasets'
+  summary: xcube data store for ESA EE SMOS Level-2 data
   description: |
     xcube-smos is a data store plug-in for xcube, providing experimental
     support for ESA EE SMOS Level-2 data.
