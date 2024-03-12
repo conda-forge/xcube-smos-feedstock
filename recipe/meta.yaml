@@ -31,6 +31,7 @@ requirements:
     - numpy
     - numba
     - pandas
+    - requests
     - xarray
     - xcube >=1.2
 
