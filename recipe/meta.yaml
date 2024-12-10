@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "xcube-smos" %}
 {% set version = "0.3.0" %}
 
@@ -12,17 +13,17 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     # Requires kerchunk
     - nckcidx = xcube_smos.nckcindex.cli:cli
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - click
     - fsspec
     - h5netcdf
@@ -36,6 +37,8 @@ requirements:
     - xcube >=1.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - xcube_smos
     - xcube_smos.store
