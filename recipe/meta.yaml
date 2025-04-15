@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "xcube-smos" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube-smos/archive/v{{ version }}.tar.gz
-  sha256: 1cef96683d4a52155ebb7b711f343e81add72b60d1746696d8a5afc95744fd1e
+  sha256: 818c9a5a756bee8a113c009c1eb9009bbc421b2016ea426214f69e726b3ade7a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     # Requires kerchunk
     - nckcidx = xcube_smos.nckcindex.cli:cli
