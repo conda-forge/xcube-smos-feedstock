@@ -35,6 +35,7 @@ requirements:
     - requests
     - xarray
     - xcube >=1.2
+    - zarr >=2,<3
 
 test:
   requires:
