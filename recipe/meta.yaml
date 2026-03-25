@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "xcube-smos" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube-smos/archive/v{{ version }}.tar.gz
-  sha256: 818c9a5a756bee8a113c009c1eb9009bbc421b2016ea426214f69e726b3ade7a
+  sha256: 13f210c5fe600218887f984615648c70093842fc54c5f14e5c12b1377af98693
 
 build:
   noarch: python
